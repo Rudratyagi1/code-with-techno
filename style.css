@@ -1,0 +1,418 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    max-height: auto;
+    max-width: auto;
+    font-size: medium;
+    font-style: italic;
+    font-family: 'Roboto Slab', serif;
+}
+
+/* navbar section */
+.navbar {
+    display: flex;
+    position: relative;
+    font-family: 'Roboto Slab', serif;
+    height: 89px;
+}
+
+.navbar::before {
+    content: "";
+    background-color: rgb(26, 10, 106);
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    position: absolute;
+
+}
+
+.img img {
+    height: 70px;
+    width: 70px;
+    margin-top: 14px;
+    margin-left: 30px;
+    border-radius: 50%;
+}
+
+.list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 250px;
+}
+
+.list ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.li a {
+    color: white;
+    text-decoration: none;
+    margin: 0px 10px;
+    font-size: medium;
+}
+
+.li a:hover {
+    border: 2px solid;
+    border-radius: 4px;
+    background-color: rgb(248, 105, 105);
+}
+
+.b1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 200px;
+    margin-top: 0px;
+}
+
+#btn2 {
+    display: block;
+    height: 20px;
+    cursor: pointer;
+    margin-top: 7px;
+    margin-right: 7px;
+}
+
+#btn2:hover {
+    display: block;
+    height: 20px;
+    cursor: pointer;
+    margin-top: 7px;
+    margin-right: 7px;
+}
+
+#btn3 {
+    display: block;
+    height: 20px;
+    cursor: pointer;
+    margin-top: 7px;
+}
+
+/* info section */
+#sec1 {
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 5%;
+    flex-direction: column;
+    height: 90vh;
+}
+
+#sec1::before {
+    content: "";
+    background-image: url(../images/IMG_20231013_193855.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 85%;
+    width: 100%;
+    z-index: 3;
+    opacity: 0.4;
+    position: absolute;
+
+}
+
+#d1 {
+    color: black;
+}
+
+#h1 {
+    padding: 20px 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: italic;
+    margin-bottom: 40px;
+    margin-left: 20px;
+    font-size: xx-large;
+    color: white;
+}
+
+.p p {
+    padding: 20px 0px;
+    width: 300px;
+    margin-left: 20px;
+    font-size: x-large;
+}
+
+#btn1 {
+    margin-top: 40px;
+    border-radius: 4px;
+    color: black;
+    margin-left: 20px;
+    font-size: large;
+
+}
+
+#btn1:hover {
+    margin-top: 80px;
+    border-radius: 4px;
+    background-color: rgb(248, 105, 105);
+}
+
+/* team section */
+
+
+#h2 {
+    padding: 6px;
+    margin-bottom: 20px;
+    font-size: xx-large;
+    color: rebeccapurple;
+}
+
+#ct {
+    padding: 6px;
+    margin: 20px;
+    font-size: x-large;
+}
+
+section#slides_parent {
+    padding-bottom: 150px;
+   
+}
+
+.slides {
+    display: flex;
+    justify-content: center;
+}
+
+.slides h4 {
+    color: #444;
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 50px;
+}
+
+.slide_1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/@IMAGE_NIPUN.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 25px;
+    width: 60px;
+    height: 300px;
+    border-radius: 40px;
+    margin: 31px 43px;
+    position: relative;
+    transition: all 0.5s ease;
+    font-size: xx-small;
+}
+
+.slide_1:hover {
+    min-width: 250px;
+}
+
+.slide_1:hover .slide_info1 {
+    transform: rotate(0deg);
+    left: 20px;
+    bottom: 20px;
+    font-size: 22px;
+}
+
+.slide_2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/Sarthak\ Agarwal\ .jpg);
+}
+
+.slide_3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/IMG-20201212-WA0008-1.jpg);
+}
+
+.slide_4 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/20231013_101125.jpg);
+}
+
+.slide_5 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/IMG_20231013_183328.jpg);
+}
+
+/* .slide_6 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(IMAGE_1659545298.webp);
+}
+
+.slide_7 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(Rani_ki_vav_02.jpg);
+}
+.slide_8{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(Konarka_Temple.jpg);}
+
+.slide_9{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(Sunrise-at-Gangaikonda-Cholapuram.avif);}
+.slide_10{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(DCTM_Penguin_UK_DK_AL345768_mxdsvn.webp);}
+        
+     */
+
+.slide_info1 {
+    position: absolute;
+    bottom: 51px;
+    color: #ffff;
+    transform: rotate(-90deg);
+    right: 0px;
+    font-weight: 700;
+    font-size: 12px;
+}
+ /* web dev section */
+#wt {
+    padding: 6px;
+    margin: 30px;
+    font-size: x-large;
+    display: flex;
+    justify-content: center;
+}
+.slide_11 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/IMG-20201212-WA0008-1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 25px;
+    width: 60px;
+    height: 300px;
+    border-radius: 40px;
+    margin: 31px 43px;
+    position: relative;
+    transition: all 0.5s ease;
+    font-size: xx-small;
+}
+
+.slide_11:hover {
+    min-width: 250px;
+}
+
+.slide_11:hover .slide_info2 {
+    transform: rotate(0deg);
+    left: 20px;
+    bottom: 20px;
+    font-size: 22px;
+}
+
+.slide_21 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url( );
+}
+
+.slide_31 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url();
+}
+
+.slide_41 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url();
+}
+
+/* .slide_51 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/IMG_20231013_183328.jpg);
+} */
+
+/* .slide_6 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(IMAGE_1659545298.webp);
+}
+
+.slide_7 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(Rani_ki_vav_02.jpg);
+}
+.slide_8{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(Konarka_Temple.jpg);}
+
+.slide_9{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(Sunrise-at-Gangaikonda-Cholapuram.avif);}
+.slide_10{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(DCTM_Penguin_UK_DK_AL345768_mxdsvn.webp);}
+        
+     */
+
+.slide_info2 {
+    position: absolute;
+    bottom: 51px;
+    color: #ffff;
+    transform: rotate(-90deg);
+    right: 0px;
+    font-weight: 700;
+    font-size: 12px;
+}
+.slides2{
+    display: flex;
+    justify-content: center;
+}
+/* content creation team section */
+#cct {
+    padding: 6px;
+    margin: 30px;
+    font-size: x-large;
+    display: flex;
+    justify-content: center;
+}
+.slide_22 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/IMG_20231013_193855.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 25px;
+    width: 60px;
+    height: 300px;
+    border-radius: 40px;
+    margin: 31px 43px;
+    position: relative;
+    transition: all 0.5s ease;
+    font-size: xx-small;
+}
+
+.slide_22:hover {
+    min-width: 250px;
+}
+
+.slide_22:hover .slide_info3 {
+    transform: rotate(0deg);
+    left: 20px;
+    bottom: 20px;
+    font-size: 22px;
+}
+
+.slide_212 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/InShot_20230514_182241218.jpg );
+}
+
+.slide_312{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/Screenshot_20231012-202104_Gallery.jpg);
+}
+
+/* .slide_41 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url();
+} */
+
+/* .slide_51 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/IMG_20231013_183328.jpg);
+} */
+
+/* .slide_6 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(IMAGE_1659545298.webp);
+}
+
+.slide_7 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(Rani_ki_vav_02.jpg);
+}
+.slide_8{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(Konarka_Temple.jpg);}
+
+.slide_9{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(Sunrise-at-Gangaikonda-Cholapuram.avif);}
+.slide_10{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(DCTM_Penguin_UK_DK_AL345768_mxdsvn.webp);}
+        
+     */
+
+.slide_info3 {
+    position: absolute;
+    bottom: 51px;
+    color: #ffff;
+    transform: rotate(-90deg);
+    right: 0px;
+    font-weight: 700;
+    font-size: 12px;
+}
+.slides3{
+    display: flex;
+    justify-content: center;
+}
